@@ -1,0 +1,40 @@
+extends index
+
+block content
+    div(id='contenedor')       
+            div(id='direccionalIzquierda' class='container')     
+            
+            div(id="tableroCentral" class="container")       
+            
+                h4 Marchas: 
+                    select(id='marcha')
+                        option(value='neutro') Neutro
+                        option(value='1') Primera
+                        option(value='r') Reversa
+                
+                h4 Freno de mano: 
+                    select(id='frenoDeMano')
+                        option(value='on') On
+                        option(value='off') Off
+
+                h4 Freno: 
+                    select(id='freno')
+                        option(value='on') On
+                        option(value='off') Off
+
+                h4 Clutch: 
+                    select(id='clutch')
+                        option(value='on') On
+                        option(value='off') Off
+
+                h4 Distancia: 
+                    input(
+                        type='text'
+                        id='kilometros'
+                        placeholder='Ingrese la distancia'
+                    )
+
+            div(id='direccionalDerecha', class='container')
+
+            div(id='mensajes', class='container')
+                p(id='mensaje')
